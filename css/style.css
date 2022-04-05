@@ -1,0 +1,165 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,700;1,900&display=swap');
+
+:root {
+   --theme: #E93B81;
+   --them-dark: #d32d6f; 
+}
+
+body {
+   line-height: 1.8;
+   color: #898fa1;
+   font-size: 15px;
+   font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 700;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #11245A;
+}
+
+.title-sm {
+   font-size: 16px;
+   letter-spacing: 1px;
+}
+
+a {
+   font-weight: 700;
+   transition: all 0.4s ease;
+}
+
+img {
+   width: 100%;
+}
+
+small {
+   font-size: 12px;
+   letter-spacing: 2px;
+   font-weight: 700;
+}
+
+section {
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+
+/* navbar */
+.navbar .logo {
+   font-size: 22px;
+   color: var(--theme) !important;
+}
+
+.navbar .nav-link {
+   font-size: 12px;
+   letter-spacing: 1px;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover {
+   color: var(--theme) !important; 
+}
+
+.navbar-toggler {
+   box-shadow: none !important;
+   border: 1px solid transparent;
+}
+.navbar-toggler:hover {
+   border: 1px solid lightgray;
+}
+
+/* home */
+#home {
+   background: linear-gradient(rgba(17, 36, 90, 0.8), rgba(17, 36, 90, 0.8)), url('../img/hero_img.jpg');
+   min-height: 100vh;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display: grid;
+   place-content: center;
+}
+
+#home h1 {
+   font-weight: 700;
+}
+#home p {
+   max-width: 750px;
+   margin: 30px auto;
+}
+
+/* buttons */
+.btn:focus {
+   box-shadow: none !important;
+   outline: none;
+   border: none;
+}
+.btn {
+   font-weight: 700;
+   font-size: 12px;
+   text-transform: uppercase;
+   padding: 12px 30px;
+}
+.btn-brand {
+   background-color: var(--theme);
+   color: #fff;
+}
+.btn-brand:hover {
+   background-color: var(--them-dark);
+   color: #fff;
+}
+
+
+/* icon */
+.icon-box {
+   width: 60px;
+   height: 60px;
+   display: grid;
+   place-content: center;
+   background: var(--theme);
+   font-size: 32px;
+}
+
+
+/* portfolio */
+.portfolio-item {
+   position: relative;
+   overflow: hidden;
+}
+
+.portfolio-item img,
+.portfolio-overlay {
+   transition: all .4s ease;
+}
+
+.portfolio-overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(34, 34, 174, .8);
+   display: flex;
+   align-items: end;
+   opacity: 0;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+   opacity: 1;
+}
+.portfolio-item:hover img {
+   transform: scale(1.1);
+}
+
+
+/* feature  */
+.feature-item .icon-box {
+   width: 35px;
+   height: 35px;
+   display: grid;
+   place-content: center;
+   font-size: 18px;
+   border-radius: 50%;
+}
+
+
+

@@ -3,18 +3,312 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
         <!-- bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/boxicons.min.css">
-        <link rel="stylesheet" href="css/style.css">
         
+        <!-- cutome style -->
+        <link rel="stylesheet" href="./css/style.css">
+        
+        <!-- title -->
         <title>Website project - bootstrap</title>
     </head>
-    <body>
+    <body  data-bs-spy="scroll" data-bs-target=".navbar">
+        <!-- navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white border border-bottom-seconday">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand logo text-uppercase" href="#">Website.</a>
+                
+                <!-- toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <h1>bootstrap project.</h1>
+                <!-- navbar items -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-uppercase">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#features">features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
 
+        <!-- home -->
+        <section id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="text-uppercase text-white">we are creative agency, creative people</h1>
+                        <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus explicabo esse impedit quo aperiam! Officiis dolorem quibusdam ullam earum, sint at obcaecati dolore sunt, consequuntur veritatis numquam distinctio maiores dicta?</p>
+
+                        <!-- action button -->
+                        <a href="#contact" class="btn btn-brand">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- home end -->
+
+        <!-- services -->
+        <section id="services">
+            <div class="container">
+                <!-- hero -->
+                <div class="row">
+                    <div class="col-12 section-intro">
+                        <h1 class="text-center">Our Services</h1>
+                        <hr class="hline pt-1 mt-4  w-25 mx-auto bg-danger" />
+                    </div>
+                </div>
+
+                <!-- items -->
+                <div class="row">
+                    <!-- cart graphic desing -->
+                    <div class="col-lg-4 col-sm-6 p-4">
+                        <div class="icon-box text-white rounded">
+                            <i class="fa-solid fa-mountain-sun"></i>
+                        </div>
+                        <h4 class="title-sm mt-4">graphic desgining</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro.</p>
+                    </div>
+                    
+                    <!-- cart coding -->
+                    <div class="col-lg-4 col-sm-6 p-4">
+                        <div class="icon-box text-white rounded">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h4 class="title-sm mt-4">coding</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro.</p>
+                    </div>
+
+                    <!-- cart image -->
+                    <div class="col-lg-4 col-sm-6 p-4">
+                        <div class="icon-box text-white rounded">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <h4 class="title-sm mt-4">SEO</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro.</p>
+                    </div>
+
+                    <!-- cart sheild-->
+                    <div class="col-lg-4 col-sm-6 p-4">
+                        <div class="icon-box text-white rounded">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <h4 class="title-sm mt-4">Security</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro.</p>
+                    </div>
+
+                    <!-- cart laptop-->
+                    <div class="col-lg-4 col-sm-6 p-4">
+                        <div class="icon-box text-white rounded">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h4 class="title-sm mt-4">UX desgining</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro.</p>
+                    </div>
+
+                    <!-- cart heart-->
+                    <div class="col-lg-4 col-sm-6 p-4">
+                        <div class="icon-box text-white rounded">
+                            <i class="fa-solid fa-face-grin-hearts"></i>
+                        </div>
+                        <h4 class="title-sm mt-4">Web desing</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+
+        <!-- portfolio -->
+        <section id="portfolio" class="row g-0">
+            <!-- <div class="container">
+                <div class="row">
+                    <div class="col-12 section-intro">
+                        <h1 class="text-center">Portfolio</h1>
+                        <hr class="hline pt-1 mt-4  w-25 mx-auto bg-danger" />
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- portfolio item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="portfolio-item">
+                    <img src="./img/p1.jpg" alt="portfolio image">
+                    <div class="portfolio-overlay p-4">
+                        <div>
+                            <h3 class="text-white">project title</h3>
+                            <h6 class="text-white">project subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="portfolio-item">
+                    <img src="./img/p2.jpg" alt="portfolio image">
+                    <div class="portfolio-overlay p-4">
+                        <div>
+                            <h3 class="text-white">project title</h3>
+                            <h6 class="text-white">project subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- portfolio item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="portfolio-item">
+                    <img src="./img/p3.jpg" alt="portfolio image">
+                    <div class="portfolio-overlay p-4">
+                        <div>
+                            <h3 class="text-white">project title</h3>
+                            <h6 class="text-white">project subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- portfolio item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="portfolio-item">
+                    <img src="./img/p4.jpg" alt="portfolio image">
+                    <div class="portfolio-overlay p-4">
+                        <div>
+                            <h3 class="text-white">project title</h3>
+                            <h6 class="text-white">project subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- portfolio item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="portfolio-item">
+                    <img src="./img/p5.jpg" alt="portfolio image">
+                    <div class="portfolio-overlay p-4">
+                        <div>
+                            <h3 class="text-white">project title</h3>
+                            <h6 class="text-white">project subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- portfolio item -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="portfolio-item">
+                    <img src="./img/p6.jpg" alt="portfolio image">
+                    <div class="portfolio-overlay p-4">
+                        <div>
+                            <h3 class="text-white">project title</h3>
+                            <h6 class="text-white">project subtitle</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio end -->
+
+        <!-- features -->
+        <section id="features">
+            <div class="container">
+                <!-- title -->
+                <div class="row">
+                    <div class="col-12 section-intro">
+                        <h1 class="text-center">Features</h1>
+                        <hr class="hline pt-1 mt-4  w-25 mx-auto bg-danger" />
+                    </div>
+                </div>
+
+                <!-- items -->
+                <div class="row mt-5 gy-4">
+                    <!-- cart -->
+                    <div class="col-sm-64 col-lg-4 d-flex gap-4 feature-item">
+                        <div class="icon-box text-white flex-shrink-0">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="title-sm">Features</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo!</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <div class="col-sm-64 col-lg-4 d-flex gap-4 feature-item">
+                        <div class="icon-box text-white flex-shrink-0">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="title-sm">Features</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo!</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <div class="col-sm-64 col-lg-4 d-flex gap-4 feature-item">
+                        <div class="icon-box text-white flex-shrink-0">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="title-sm">Features</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo!</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <div class="col-sm-64 col-lg-4 d-flex gap-4 feature-item">
+                        <div class="icon-box text-white flex-shrink-0">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="title-sm">Features</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo!</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <div class="col-sm-64 col-lg-4 d-flex gap-4 feature-item">
+                        <div class="icon-box text-white flex-shrink-0">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="title-sm">Features</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo!</p>
+                        </div>
+                    </div>
+
+                    <!-- cart -->
+                    <div class="col-sm-64 col-lg-4 d-flex gap-4 feature-item">
+                        <div class="icon-box text-white flex-shrink-0">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div>
+                            <h5 class="title-sm">Features</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil laudantium est error autem pariatur porro. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, explicabo!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features end -->
+
+       
         <!-- bootstrap js -->
         <script src="./js/bootstrap.bundle.min.js"></script>
     </body>
